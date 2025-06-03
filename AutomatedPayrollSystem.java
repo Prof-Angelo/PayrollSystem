@@ -43,7 +43,7 @@ public class AutomatedPayrollSystem {
                 System.out.println("Error: " + e.getMessage());
                 scr.nextLine();
             }
-        }
+        
         
 
         
@@ -79,7 +79,7 @@ public class AutomatedPayrollSystem {
             System.out.println("[6] Review Payroll Regulations");
             System.out.println("[7] Employee's with Loan");
             System.out.println("[8] Employee's with Bonus");
-            System.out.println("[9] Exit");
+            System.out.println("[9] Logout");
         
             String yesNo = "";
             int choice;
@@ -105,10 +105,10 @@ public class AutomatedPayrollSystem {
                         if (empCounter < totalEmployee) {
                             
                             do {
-                            System.out.print("Enter Employee Name: ");
+                            System.out.print("\nEnter Employee Name: ");
                             empNames[empCounter] = scr.nextLine();
                                 
-                                System.out.println("Do you want to continue? (Yes/No): ");
+                                System.out.print("Do you want to continue? (Yes/No): ");
                                 yesNo = scr.nextLine();
                             } while (yesNo.equalsIgnoreCase("No"));
                                 
@@ -117,7 +117,7 @@ public class AutomatedPayrollSystem {
                             empIds[empCounter] = scr.nextInt();
                             scr.nextLine();
                                 
-                                System.out.println("Do you want to continue? (Yes/No): ");
+                                System.out.print("Do you want to continue? (Yes/No): ");
                                 yesNo = scr.nextLine();
                             } while (yesNo.equalsIgnoreCase("No"));
 
@@ -126,7 +126,7 @@ public class AutomatedPayrollSystem {
                             empCounter++;
                             
                         } else {
-                            System.out.println("MAXIMUM EMPLOYEE LIMIT REACHED!");
+                            System.out.println("\nMAXIMUM EMPLOYEE LIMIT REACHED!");
                         }
                         
                     } catch (InputMismatchException e) {
@@ -160,11 +160,11 @@ public class AutomatedPayrollSystem {
                             int id;
                             
                             do {
-                            System.out.print("Enter Employee ID: ");
+                            System.out.print("\nEnter Employee ID: ");
                             id = scr.nextInt();
                             scr.nextLine();
                                 
-                                System.out.println("Do you want to continue? (Yes/No): ");
+                                System.out.print("Do you want to continue? (Yes/No): ");
                                 yesNo = scr.nextLine();
                             } while (yesNo.equalsIgnoreCase("No"));
                             
@@ -177,7 +177,7 @@ public class AutomatedPayrollSystem {
                                         System.out.print("\nEnter Payroll Date (MM/DD/YYYY): ");
                                         payrollDates[i] = scr.nextInt();
                                     
-                                    System.out.println("Do you want to continue? (Yes/No): ");
+                                    System.out.print("Do you want to continue? (Yes/No): ");
                                         yesNo = scr.nextLine();
                                         scr.nextLine();
                                     } while (yesNo.equalsIgnoreCase("No"));
@@ -187,7 +187,7 @@ public class AutomatedPayrollSystem {
                                     System.out.print("\nEnter Daily Wage: ");
                                     dailyWage[i] = scr.nextDouble();
                                         
-                                       System.out.println("Do you want to continue? (Yes/No): ");
+                                       System.out.print("Do you want to continue? (Yes/No): ");
                                         yesNo = scr.nextLine();
                                         scr.nextLine();
                                     } while (yesNo.equalsIgnoreCase("No"));
@@ -196,7 +196,7 @@ public class AutomatedPayrollSystem {
                                     System.out.print("\nEnter Days Worked: ");
                                     daysWorked[i] = scr.nextInt();
                                         
-                                        System.out.println("Do you want to continue? (Yes/No): ");
+                                        System.out.print("Do you want to continue? (Yes/No): ");
                                         yesNo = scr.nextLine();
                                         scr.nextLine();
                                     } while (yesNo.equalsIgnoreCase("No"));
@@ -212,7 +212,7 @@ public class AutomatedPayrollSystem {
                                     bonus[i] = scr.nextDouble();
                                         scr.nextLine();
                                         
-                                        System.out.println("Do you want to continue? (Yes/No): ");
+                                        System.out.print("Do you want to continue? (Yes/No): ");
                                         yesNo = scr.nextLine();
                                     } while (yesNo.equalsIgnoreCase("No"));
                                     
@@ -221,7 +221,7 @@ public class AutomatedPayrollSystem {
                                     loan[i] = scr.nextDouble();
                                         scr.nextLine();
                                         
-                                        System.out.println("Do you want to continue? (Yes/No): ");
+                                        System.out.print("Do you want to continue? (Yes/No): ");
                                         yesNo = scr.nextLine();
                                         
                                     } while (yesNo.equalsIgnoreCase("No"));
@@ -253,10 +253,10 @@ public class AutomatedPayrollSystem {
                             int id;
                             
                             do {
-                            System.out.print("Enter Employee ID: ");
+                            System.out.print("\nEnter Employee ID: ");
                             id = scr.nextInt();
                                 
-                                System.out.println("Do you want to continue? (Yes/No): ");
+                                System.out.print("Do you want to continue? (Yes/No): ");
                                 yesNo = scr.nextLine();
                                 scr.nextLine();
                             } while (yesNo.equalsIgnoreCase("No"));
@@ -309,7 +309,7 @@ public class AutomatedPayrollSystem {
                             id = scr.nextInt();
                             scr.nextLine();
                             
-                                System.out.println("Do you want to continue? (Yes/No): ");
+                                System.out.print("Do you want to continue? (Yes/No): ");
                                 yesNo = scr.nextLine();
                             } while (yesNo.equalsIgnoreCase("No"));
                             
@@ -323,7 +323,7 @@ public class AutomatedPayrollSystem {
                                         System.out.print("Enter New Payroll Date (MM/DD/YYYY): ");
                                         payrollDates[i] = scr.nextInt();
                                     
-                                    System.out.println("Do you want to continue? (Yes/No): ");
+                                    System.out.print("Do you want to continue? (Yes/No): ");
                                         yesNo = scr.nextLine();
                                          scr.nextLine();
                                     } while (yesNo.equalsIgnoreCase("No"));
@@ -332,7 +332,7 @@ public class AutomatedPayrollSystem {
                                     System.out.print("Enter Daily Wage: ");
                                     dailyWage[i] = scr.nextDouble();
                                         
-                                        System.out.println("Do you want to continue? (Yes/No): ");
+                                        System.out.print("Do you want to continue? (Yes/No): ");
                                         yesNo = scr.nextLine();
                                         scr.nextLine();
                                     } while (yesNo.equalsIgnoreCase("No"));
@@ -341,7 +341,7 @@ public class AutomatedPayrollSystem {
                                     System.out.print("Enter Days Worked: ");
                                     daysWorked[i] = scr.nextInt();
 
-                                        System.out.println("Do you want to continue? (Yes/No): ");
+                                        System.out.print("Do you want to continue? (Yes/No): ");
                                         yesNo = scr.nextLine();
                                         scr.nextLine();
                                     } while (yesNo.equalsIgnoreCase("No"));
@@ -356,7 +356,7 @@ public class AutomatedPayrollSystem {
                                     System.out.print("Enter new Bonus: ");
                                     bonus[i] = scr.nextDouble();
 
-                                        System.out.println("Do you want to continue? (Yes/No): ");
+                                        System.out.print("Do you want to continue? (Yes/No): ");
                                         yesNo = scr.nextLine();
                                         scr.nextLine();
                                     } while (yesNo.equalsIgnoreCase("No"));
@@ -365,7 +365,7 @@ public class AutomatedPayrollSystem {
                                     System.out.print("Enter new Loan: ");
                                     loan[i] = scr.nextDouble();
                                         
-                                        System.out.println("Do you want to continue? (Yes/No): ");
+                                        System.out.print("Do you want to continue? (Yes/No): ");
                                         yesNo = scr.nextLine();
                                         scr.nextLine();
                                     } while (yesNo.equalsIgnoreCase("No"));
@@ -390,6 +390,7 @@ public class AutomatedPayrollSystem {
                     }
                     break;
 
+
                 case 6:
                     System.out.println("\n--- Payroll Regulations ---");
                     System.out.println("1. SSS: 4.5% of Gross Salary");
@@ -398,7 +399,9 @@ public class AutomatedPayrollSystem {
                     System.out.println("4. Income Tax: 10% of Gross Salary");
                     System.out.println("5. Bonus and Loan are manually entered");
                     System.out.println("6. Loan interest is already included in loan value entered");
+                    System.out.println("\nNOTE: THIS INFORMATIONS ARE BASED ON THE LATEST TAX RATES REGULATIONS LAW OF THE PHILIPPINES");
                     break;
+
 
                 case 7:
                     System.out.println("\n--- Employees with Loan ---");
@@ -409,13 +412,13 @@ public class AutomatedPayrollSystem {
                             System.out.println("\nDate (MM/DD/YY): " + payrollDates[i]);
                             System.out.println("Employee Name: " + empNames[i]);
                             System.out.println("Loan Amount: " + loan[i]);
-                            
                         }
                     }
                     if (!foundLoan) {
                         System.out.println("NO EMPLOYEE HAS A LOAN.");
                     }
                     break;
+
 
                 case 8:
                     System.out.println("\n--- Employees with Bonus ---");
@@ -428,28 +431,29 @@ public class AutomatedPayrollSystem {
                             System.out.println("Bonus Amount: " + bonus[i]);
                         }
                     }
+
                     if (!foundBonus) {
                         System.out.println("NO EMPLOYEE HAS A BONUS.");
                     }
                     break;
 
                 case 9:
-                    System.out.print("Do you want to exit? (Yes/No): ");
+                    System.out.print("Do you want to logout? (Yes/No): ");
                     String exit = scr.nextLine();
                     if (exit.equalsIgnoreCase("Yes")) {
-                        System.out.println("\nExiting the program...");
+                        System.out.println("\nLogging out the program...\n\n");
                         isRepeat = true;
                         systemLoop = false;
                     } break;
                 
                 
-
                 default:
                     System.out.println("Invalid choice.");
                     break;
             }
         }
-
+    }
         scr.close();
     }
 }
+                    
